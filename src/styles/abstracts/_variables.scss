@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$text-font-principal: "Space Grotesk", sans-serif;
+
+/// Code (monospace) font family
+
+/// Color
+$black: #151515;
+$green: #4ee1a0;
+$light-black: #242424;
+$grey: #d9d9d9;
+$white: #ffffff;
+$orange: #ff6f5b;
+
+/// Breakpoints map
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+$bp-desktop-primary: 1900px;
+
+$tablet: $bp-tablet;
+$tablethorizontal: $bp-tablet-horizontal;
+$desktop: $bp-desktop;
+$desktop-xl: $bp-desktop-xl;
+$desktop-primary: $bp-desktop-primary;

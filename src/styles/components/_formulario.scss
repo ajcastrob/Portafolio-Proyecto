@@ -1,0 +1,86 @@
+@use "../abstracts" as ab;
+
+div.contenedor-formulario {
+  margin-left: 20px;
+  margin-right: 20px;
+  @include ab.breakpoint(ab.$tablet) {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include ab.breakpoint(ab.$desktop) {
+    max-width: 650px;
+    margin: 0;
+    margin-top: 84px;
+  }
+}
+
+div.form-group {
+  margin-bottom: 40px;
+  label {
+    display: block;
+    color: ab.$grey;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 26px;
+    letter-spacing: -0.22px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    @include ab.breakpoint(ab.$desktop) {
+      display: block;
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #555555;
+    color: ab.$white;
+    font-size: 18px;
+    padding: 6px 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+    &:focus:invalid + .error-message {
+      display: block;
+    }
+
+    &:focus {
+      border-bottom-color: ab.$green;
+    }
+    &:focus:invalid {
+      border-bottom: 2px solid ab.$orange;
+    }
+    @include ab.breakpoint(ab.$desktop) {
+      width: 100%;
+      padding: 5px 0;
+      margin: 0;
+    }
+  }
+
+  textarea {
+    height: 80px;
+  }
+}
+
+span.error-message {
+  text-align: right;
+  font-size: 0.8em;
+  color: ab.$orange;
+  display: none;
+}
+
+.form-group-2 {
+  position: relative;
+
+  input:focus:invalid {
+    background-image: url("../../../images/desktop/alert.svg");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 20px 20px;
+    padding-right: 36px; // ← espacio para que el icono no tape el texto
+  }
+}

@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@use "variables" as va;
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Kitty Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button() {
+  color: va.$white;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 95px;
+    width: 35%;
+    height: 2px;
+    transition: width 0.6s ease;
+    background: linear-gradient(to right, #00e5ff, #00ff99);
+    @include breakpoint(va.$tablet) {
+      left: 2px;
+    }
+  }
+  &:hover::after {
+    width: 0%;
+  }
+  &:hover {
+    color: va.$green;
+  }
+}
+
+@mixin breakpoint($bp) {
+  @if $bp == va.$tablet {
+    @media (min-width: va.$bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == va.$tablethorizontal {
+    @media (min-width: va.$bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == va.$desktop {
+    @media (min-width: va.$bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == va.$desktop-xl {
+    @media (min-width: va.$bp-desktop-xl) {
+      @content;
+    }
+  }
+
+  @if $bp == va.$desktop-primary {
+    @media (min-width: va.$bp-desktop-primary) {
+      @content;
+    }
+  }
+}

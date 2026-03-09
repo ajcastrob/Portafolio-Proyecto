@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+@use "../abstracts" as ab;
+
+body {
+  background-color: ab.$black;
+  color: ab.$white;
+}
