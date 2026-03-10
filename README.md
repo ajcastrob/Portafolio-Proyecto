@@ -1,4 +1,4 @@
-# Portafolio Personal — Adam Keyes
+# Portafolio Personal
 
 Proyecto de portafolio personal desarrollado como práctica de CSS avanzado y diseño responsive. Basado en el diseño de [Frontend Mentor](https://www.frontendmentor.io).
 
@@ -10,8 +10,8 @@ Proyecto de portafolio personal desarrollado como práctica de CSS avanzado y di
 
 ## 📸 Preview
 
-| Mobile | Tablet | Desktop |
-|--------|--------|---------|
+| Mobile                     | Tablet                           | Desktop                                         |
+| -------------------------- | -------------------------------- | ----------------------------------------------- |
 | Diseño en columna centrado | Imagen hero a la derecha del nav | Layout de dos columnas con overlay en proyectos |
 
 ---
@@ -28,13 +28,13 @@ Proyecto de portafolio personal desarrollado como práctica de CSS avanzado y di
 
 ## 📐 Breakpoints
 
-| Nombre | Valor |
-|--------|-------|
-| Mobile | < 768px |
-| Tablet | 768px |
-| Tablet horizontal | 1024px |
-| Desktop | 1200px |
-| Desktop XL | 1440px |
+| Nombre            | Valor   |
+| ----------------- | ------- |
+| Mobile            | < 768px |
+| Tablet            | 768px   |
+| Tablet horizontal | 1024px  |
+| Desktop           | 1200px  |
+| Desktop XL        | 1440px  |
 
 ---
 
@@ -129,13 +129,13 @@ El sitio queda disponible en `https://TU_USUARIO.github.io/portafolio_2/`
 
 ## 🎨 Paleta de colores
 
-| Variable | Color | Uso |
-|----------|-------|-----|
-| `$black` | `#151515` | Fondo principal |
+| Variable       | Color     | Uso                       |
+| -------------- | --------- | ------------------------- |
+| `$black`       | `#151515` | Fondo principal           |
 | `$light-black` | `#242424` | Fondo footer y secundario |
-| `$green` | `#4ee1a0` | Acentos y hover |
-| `$white` | `#ffffff` | Texto principal |
-| `$grey` | `#d9d9d9` | Texto secundario y líneas |
+| `$green`       | `#4ee1a0` | Acentos y hover           |
+| `$white`       | `#ffffff` | Texto principal           |
+| `$grey`        | `#d9d9d9` | Texto secundario y líneas |
 
 ---
 
