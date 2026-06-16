@@ -4,7 +4,7 @@ Proyecto de portafolio personal desarrollado como práctica de CSS avanzado y di
 
 ## 🌐 Demo
 
-[Ver sitio publicado](https://TU_USUARIO.github.io/portafolio_2/)
+[Ver sitio publicado](https://ajcastrob.github.io/Portafolio-Proyecto/)
 
 ---
 
